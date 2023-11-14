@@ -1,0 +1,6 @@
+C:\Users\Loofinka\source\repos\ForGitHub\LiteCodeLibrary\bin\Release\LiteCodeLibrary.dll
+C:\Users\Loofinka\source\repos\ForGitHub\LiteCodeLibrary\bin\Release\LiteCodeLibrary.pdb
+C:\Users\Loofinka\source\repos\ForGitHub\LiteCodeLibrary\obj\Release\LiteCodeLibrary.csproj.AssemblyReference.cache
+C:\Users\Loofinka\source\repos\ForGitHub\LiteCodeLibrary\obj\Release\LiteCodeLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Loofinka\source\repos\ForGitHub\LiteCodeLibrary\obj\Release\LiteCodeLibrary.dll
+C:\Users\Loofinka\source\repos\ForGitHub\LiteCodeLibrary\obj\Release\LiteCodeLibrary.pdb
