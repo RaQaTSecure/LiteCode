@@ -51,6 +51,7 @@
     <Compile Include="Additional\Enums.cs" />
     <Compile Include="Network\Net.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Threading\FileSystem.cs" />
     <Compile Include="Threading\Processing.cs" />
     <Compile Include="Threading\Ziping.cs" />
   </ItemGroup>

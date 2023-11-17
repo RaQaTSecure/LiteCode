@@ -1,6 +1,6 @@
 ﻿using System.IO.Compression;
 
-namespace LiteCode.Threading
+namespace LiteCodeLibrary.Threading
 {
     public class Ziping
     {

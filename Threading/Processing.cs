@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace LiteCode.Threading
+namespace LiteCodeLibrary.Threading
 {
     public class Processing
     {

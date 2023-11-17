@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Net;
 
-namespace LiteCode.Network
+namespace LiteCodeLibrary.Network
 {
     public class Net
     {
