@@ -2,7 +2,7 @@
 
 namespace LiteCodeLibrary.Threading
 {
-    public class Ziping
+    public static class Ziping
     {
         public static void UnarchiveZip(string archivePath, string extractPath)
         {
@@ -12,6 +12,11 @@ namespace LiteCodeLibrary.Threading
         public static void ArchiveZip(string archivePath, string filesPath)
         {
             ZipFile.CreateFromDirectory(filesPath, archivePath);
+        }
+
+        public static void ArchiveOpen(string archivePath, ZipArchiveMode mainMode)
+        {
+            ZipFile.Open(archivePath, mainMode);
         }
     }
 }

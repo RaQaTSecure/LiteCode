@@ -4,7 +4,7 @@ using System.Net;
 
 namespace LiteCodeLibrary.Network
 {
-    public class Net
+    public static class Net
     {
         public static bool IsConnectionAvailable()
         {
@@ -25,11 +25,14 @@ namespace LiteCodeLibrary.Network
 
         public static void Download(string adress, string path)
         {
-            WebClient client = new WebClient();
+            if(IsConnectionAvailable())
+            {
+                WebClient client = new WebClient();
 
-            client.DownloadFile(adress, path);
-            client.DownloadFileCompleted += DownloadCompleted;
-            client.DownloadProgressChanged += DownloadChanged;
+                client.DownloadFile(adress, path);
+                client.DownloadFileCompleted += DownloadCompleted;
+                client.DownloadProgressChanged += DownloadChanged;
+            }
         }
 
         private static void DownloadChanged(object sender, DownloadProgressChangedEventArgs e)
@@ -48,11 +51,14 @@ namespace LiteCodeLibrary.Network
 
         public static void AsyncDownload(Uri adress, string path)
         {
-            WebClient client = new WebClient();
+            if(IsConnectionAvailable())
+            {
+                WebClient client = new WebClient();
 
-            client.DownloadFileAsync(adress, path);
-            client.DownloadFileCompleted += AsyncDownloadCompleted;
-            client.DownloadProgressChanged += AsyncDownloadChanged;
+                client.DownloadFileAsync(adress, path);
+                client.DownloadFileCompleted += AsyncDownloadCompleted;
+                client.DownloadProgressChanged += AsyncDownloadChanged;
+            }
         }
 
         private static void AsyncDownloadChanged(object sender, DownloadProgressChangedEventArgs e)

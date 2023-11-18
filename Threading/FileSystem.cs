@@ -4,7 +4,7 @@ using LiteCodeLibrary.Additionals;
 
 namespace LiteCodeLibrary.Threading
 {
-    public class FileSystem
+    public static class FileSystem
     {
         #region Creating Region
         public static void CreateFile(string path, string name)

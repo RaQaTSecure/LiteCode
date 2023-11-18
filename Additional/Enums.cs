@@ -19,5 +19,11 @@
             DllFile = 4,
             ExeFile = 5
         }
+
+        public enum RegistryFolderType
+        {
+            LocalMachine = 0,
+            CurrentUser = 1
+        }
     }
 }
