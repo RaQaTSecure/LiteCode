@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using LiteCodeLibrary.Additionals;
 
 namespace LiteCodeLibrary.Threading
@@ -102,5 +103,16 @@ namespace LiteCodeLibrary.Threading
             }
         }
         #endregion
+
+        public static void GetFileInfo(string path, string name)
+        {
+            FileInfo fileInfo = new FileInfo(path + name);
+
+            string fileName = fileInfo.FullName;
+            string lenghtFile = fileInfo.Length.ToString();
+            string extensionFile = fileInfo.Extension;
+
+            Console.WriteLine($"File name : {fileName} | File lenght : {lenghtFile} | File Extension : {extensionFile}");
+        }
     }
 }
